@@ -35,9 +35,7 @@ for info in zip(titles, prices, tags, total_platforms):
     resp['Platforms'] = info[3]
     output.append(resp)
 
-print(output)
-
-
+print(sorted(output, key=lambda i: i['Price'], reverse=True))
 
 
 
